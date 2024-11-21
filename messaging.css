@@ -1,0 +1,99 @@
+.event-chat-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    margin: 2rem auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.event-details {
+    background-color: var(--uta-blue);
+    color: white;
+    padding: 1rem;
+    border-radius: 15px 15px 0 0;
+}
+
+.event-details h2 {
+    margin: 0;
+}
+
+.chat-area {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: #f9f9f9;
+    border-radius: 0 0 15px 15px;
+}
+
+.messages {
+    flex-grow: 1;
+    padding: 1rem;
+    overflow-y: auto;
+}
+
+.message {
+    max-width: 70%;
+    margin-bottom: 1rem;
+    padding: 0.8rem 1.2rem;
+    border-radius: 18px;
+}
+
+.message p {
+    margin: 0;
+}
+
+.message .timestamp {
+    font-size: 0.75rem;
+    color: #888;
+}
+
+.received {
+    align-self: flex-start;
+    background-color: white;
+}
+
+.sent {
+    align-self: flex-end;
+    background-color: var(--uta-blue);
+    color: white;
+}
+
+.message-input {
+    display: flex;
+    padding: 1rem;
+}
+
+.message-input input {
+    flex-grow: 1;
+    padding: 0.8rem 1.2rem;
+    border-radius: 25px;
+    border: 1px solid #e0e0e0;
+}
+
+.message-input button {
+    background-color: var(--uta-orange);
+    color: white;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+}
+
+.message-input button:hover {
+    background-color: #d86d1e;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+   width: 8px; 
+}
+::-webkit-scrollbar-track {
+   background: #f1f1f1; 
+}
+::-webkit-scrollbar-thumb {
+   background-color:#888; 
+   border-radius :10px; 
+}
+::-webkit-scrollbar-thumb:hover {
+   background:#555; 
+}

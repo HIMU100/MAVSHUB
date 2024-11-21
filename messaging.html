@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MavsHub - Event Chat</title>
+    <link rel="stylesheet" href="MavsHub.css">
+    <link rel="stylesheet" href="event-chat.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<nav>
+    <ul>
+      <li><a href="MavsHub.html">Home</a></li>
+      <li><a href="calendar.html">Calendar</a></li>
+      <li><a href="create-group.html">Create Group</a></li>
+      <li><a href="dashboardmavshub.html">Dashboard</a></li>
+      <li><a href="groups.html">Groups</a></li>
+      <li><a href="messaging.html">Messaging</a></li>
+      <li><a href="profilemavshub.html">Profile</a></li>
+    </ul>
+  </nav>
+<body>
+    <header>
+        <h1>MavsHub</h1>
+        <!-- <nav>
+            <a href="#">Home</a>
+            <a href="#">Groups</a>
+            <a href="#" class="active">Event Chat</a>
+            <a href="#">Profile</a>
+        </nav> --> 
+    </header>
+
+    <main class="event-chat-container">
+        <section class="event-details">
+            <h2>Event: Coding Workshop</h2>
+            <p>Date: October 15, 2024</p>
+            <p>Time: 10:00 AM - 12:00 PM</p>
+            <p>Location: UTA Campus, Room 101</p>
+        </section>
+
+        <section class="chat-area">
+            <div class="messages">
+                <div class="message received">
+                    <p>Looking forward to the workshop! What should we prepare?</p>
+                    <span class="timestamp">10:30 AM</span>
+                </div>
+                <div class="message sent">
+                    <p>Make sure to bring your laptops!</p>
+                    <span class="timestamp">10:32 AM</span>
+                </div>
+            </div>
+
+            <form class="message-input">
+                <input type="text" placeholder="Type your message..." required>
+                <button type="submit"><i class="fas fa-paper-plane"></i></button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 MavsHub. All rights reserved.</p>
+    </footer>
+    <script src="messaging.js"></script>
+</body>
+</html>

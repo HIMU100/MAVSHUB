@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MavsHub &ndash; UTA Community Platform</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="MavsHub.css">
+</head>
+<nav>
+    <ul>
+      <li><a href="MavsHub.html">Home</a></li>
+      <li><a href="calendar.html">Calendar</a></li>
+      <li><a href="create-group.html">Create Group</a></li>
+      <li><a href="dashboardmavshub.html">Dashboard</a></li>
+      <li><a href="groups.html">Groups</a></li>
+      <li><a href="messaging.html">Messaging</a></li>
+      <li><a href="profilemavshub.html">Profile</a></li>
+    </ul>
+  </nav>
+<body>
+    <header>
+        <img src="MAVSHUB2.png" alt="MavsHub Logo" width="200">
+        <h1><strong>MavsHub</strong></h1>
+        <p>Connect, Collaborate, and Create with UTA Mavericks</p>
+    </header>
+
+    <main>
+        <nav>
+            <ul>
+                <li><a href="#chat">Chat</a></li>
+                <li><a href="#groups">Groups</a></li>
+                <li><a href="#communities">Communities</a></li>
+                <li><a href="#login">Login</a></li>
+                <li><a href="#signup">Sign Up</a></li>
+            </ul>
+        </nav>
+
+        <section id="login">
+            <h2>Login</h2>
+            <form action="#" method="post">
+                <table id="student-login">
+                    <thead>
+                        <tr>
+                            <th colspan="2">Student Login</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><label for="student-email">UTA Email:</label></td>
+                            <td><input type="email" id="student-email" name="student-email" placeholder="yourname@mavs.uta.edu" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="studentid">Student ID:</label></td>
+                            <td><input type="text" id="studentid" name="studentid" placeholder="10-digit Student ID" pattern="\d{10}" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="student-password">Password:</label></td>
+                            <td><input type="password" id="student-password" name="student-password" required></td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="2">
+                                <button type="submit">Login</button>
+                            </td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </form>
+
+            <p><strong>Note:</strong></p>
+            <table>
+                <tr><td>1. You must have a UTA email ID (ending with @mavs.uta.edu)</td></tr>
+                <tr><td>2. You must enter your 10-digit student ID</td></tr>
+            </table>
+        </section>
+
+        <section id="signup">
+            <h2>Sign Up for MavsHub</h2>
+            <form action="#" method="post" id="student-signup">
+                <table>
+                    <thead>
+                        <tr>
+                            <th colspan="2">Create Your MavsHub Account</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><label for="signup-email">UTA Email:</label></td>
+                            <td><input type="email" id="signup-email" name="signup-email" placeholder="yourname@mavs.uta.edu" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="signup-studentid">Student ID:</label></td>
+                            <td><input type="text" id="signup-studentid" name="signup-studentid" placeholder="10-digit Student ID" pattern="\d{10}" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="signup-password">Create Password:</label></td>
+                            <td><input type="password" id="signup-password" name="signup-password" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="confirm-password">Confirm Password:</label></td>
+                            <td><input type="password" id="confirm-password" name="confirm-password" required></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <input type="checkbox" id="terms-conditions" name="terms-conditions" required>
+                                <label for="terms-conditions">I agree to the <a href="#" target="_blank">Terms and Conditions</a></label>
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="2">
+                                <button type="submit">Create Account</button>
+                            </td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </form>
+
+            <h3>Sign Up Instructions:</h3>
+            <ol>
+                <li>Enter your UTA email address (must end with @mavs.uta.edu).</li>
+                <li>Provide your 10-digit UTA student ID.</li>
+                <li>Create your password, ensuring it is secure.</li>
+                <li>Read and agree to the terms and conditions before proceeding.</li>
+            </ol>
+        </section>
+
+        <section id="notable-alumni">
+            <h2>Discover UTA's Notable Alumni</h2>
+            <p>Learn about the remarkable graduates who have made significant impacts in various fields.</p>
+            <a href="https://www.uta.edu/about/alumni" target="_blank" rel="noopener noreferrer">
+                <button>Explore UTA's Notable Alumni</button>
+            </a>
+            <ul>
+                <li>Karla F. Gambetta &ndash; Prominent Business Leader</li>
+                <li>Dr. Neal Smatresk &ndash; University President and Scientist</li>
+                <li>Shawn Sides &ndash; Co-Founder of a Leading Tech Start-up</li>
+                <li>Jon Eicholtz &ndash; Renowned Architect</li>
+                <li>Tan Ho &ndash; Influential Entrepreneur</li>
+            </ul>
+        </section>
+
+        <section id="search">
+            <h2>Search MavsHub</h2>
+            <input type="text" id="search-bar" placeholder="Search MavsHub..." aria-label="Search MavsHub">
+            <button type="button" onclick="alert('Search functionality coming soon!')">Search</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 MavsHub &ndash; All Rights Reserved</p>
+    </footer>
+
+    <script src="MavsHub.js"></script>
+</body>
+</html>
